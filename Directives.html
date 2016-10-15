@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Directives</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</head>
+<body>
+    <!-- <div ng-app="myApp1" ng-init="Quantity=2; price=3">
+        <p>Total amount: <span ng-bind="Quantity*price"></span></p>
+    </div> -->
+
+    <div ng-app="myApp2" ng-init="Quantity=2; Price=5">
+        Quantity:<input type="number" ng-model="Quantity">
+        Price:<input type="number" ng-model="Price">
+        Total amount: {{Quantity*Price}};
+    </div>
+
+    <script>
+        var app=angular.module("myApp1",[]);
+
+    </script>
+
+    <script>
+        var app=angular.module("myApp2",[]);
+    </script>
+</body>
+</html>
